@@ -18,6 +18,9 @@ Both of these steps are combined in the **augment-and-classify.ipynb**
 # Code execution
 ## matlab code
 * run the **HistogramRrInterval.m** script upload the two output files to google cloud for google colab use
+upload the following files to google drive
+* NormalRPeaks
+* AfRPeaks
 ## python code
 run the following scripts in order in a google colab enviroment
 * **preprocessing.ipynb**
