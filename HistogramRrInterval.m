@@ -102,7 +102,8 @@ title("point care for all AF patients")
 xlim([0 1000])
 ylim([0 1000])
 
-save;
+save('NormalRPeaks','NormalRPeaks');
+save('AfRPeaks','AfRPeaks');
 %% heatmap point care estimation
 
 X = [RrI_af',RrIDelay_af'];
