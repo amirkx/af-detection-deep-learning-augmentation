@@ -1,0 +1,5 @@
+fig = plt.figure(figsize=(10,10))
+plt.xticks([])
+plt.yticks([])
+plt.imshow(af[1,:,:],cmap='gray')
+plt.savefig('af.eps', format='eps')
