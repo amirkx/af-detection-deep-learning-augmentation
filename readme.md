@@ -1,6 +1,7 @@
 # Code structure
 Most of the core matlab code was written as a part of the origianl 2017 physionet contest by the blackswan group that won the competition.
-Some of the matlab scripting and all of the python code was written by @amirkx and @arahs_vashagh.
+Some of the matlab scripting and all of the python code was written by the authors of the paper.
+
 
 ## R-R Extraction
 We have used the R-peak detection code from blackswan  to speed up the development of our algorithm. 
