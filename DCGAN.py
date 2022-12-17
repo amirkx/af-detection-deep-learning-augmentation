@@ -1,3 +1,9 @@
+"""
+Original code related to implemention of DCGAN can be found here:
+https://towardsdatascience.com/deep-convolutional-gan-how-to-use-a-dcgan-to-generate-images-in-python-b08afd4d124e
+Some changes have been made.
+"""
+
 import numpy as np
 import matplotlib.pyplot as plt
 from skimage.transform import resize
