@@ -166,5 +166,3 @@ def evaluation(normal_1, af_1, augment_1, normal_2, af_2, augment_2,
     plt.ylabel('True label')
     plt.xlabel('Predicted label')
     plt.show()
-
-    return 0
