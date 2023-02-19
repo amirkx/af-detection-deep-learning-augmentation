@@ -34,8 +34,8 @@ print(tf.version)
 from os.path import dirname, join as pjoin
 import scipy.io as sio
 
-normal=  sio.loadmat('/content/drive/MyDrive/NormalRPeaks.mat')
-af=  sio.loadmat('/content/drive/MyDrive/AfRPeaks.mat')
+normal=  sio.loadmat('/checkpoint_data/after_matlab_scripts/NormalRPeaks.mat')
+af=  sio.loadmat('/checkpoint_data/after_matlab_scripts/AfRPeaks.mat')
 
 normalImages=np.empty([normal['NormalRPeaks'].shape[1],360 ,360])
 afImages=np.empty([af['AfRPeaks'].shape[1], 360,360])
@@ -65,7 +65,7 @@ for i in range(0,normal['NormalRPeaks'].shape[1]):
  image = image[:,:,0]/256
  normalImages[i,:,:]=image
 
-np.save("normalImages.npy", normalImages)
+np.save("/checkpoint_data/after_preprocessing/normalImages.npy", normalImages)
 
 def imageCropper(samples, REQUIRED_SIZE: int): # Returns samples with required size
     from skimage.transform import resize
@@ -131,8 +131,7 @@ for i in range(0,af['AfRPeaks'].shape[1]):
  
  print(image.shape)
 
-np.save("afImages.npy", afImages)
-
+np.save("/checkpoint_data/after_preprocessing/afImages.npy", afImages)
 normalImages=np.empty([normal['NormalRPeaks'].shape[1],360 ,360])
 afImages=np.empty([af['AfRPeaks'].shape[1], 360,360])
 
@@ -140,7 +139,7 @@ normalImagesCropped=np.empty([normal['NormalRPeaks'].shape[1],112 ,112])
 afImagesCropped=np.empty([af['AfRPeaks'].shape[1], 112,112])
 
 normalImagesCropped = imageCropper(normalImages, 112)
-np.save("normalImagesCropped.npy", normalImagesCropped)
+np.save("/checkpoint_data/after_preprocessing/normalImagesCropped.npy", normalImagesCropped)
 
 afImagesCropped = imageCropper(afImages, 112)
-np.save("afImagesCropped.npy", afImagesCropped)
+np.save("/checkpoint_data/after_preprocessing/afImagesCropped.npy", afImagesCropped)
