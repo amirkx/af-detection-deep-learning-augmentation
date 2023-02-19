@@ -23,8 +23,7 @@ Some of the matlab scripting and all of the python code was written by the autho
 
 ### R-R Extraction
 We have used the R-peak detection code from blackswan  to speed up the development of our algorithm. 
-In the first part of our work we extract the R-peaks and stor them in a matlab cell. This is done by the **HistogramRrInterval.m** 
-
+In the first part of our work we extract the R-peaks and stor them in a matlab cell. This is done by RrExtraction.m 
 
 ### Preprocessing and image-Construction
 In this part we load the R-R intervals in python and  create the preprocessed Poincare images.
@@ -52,8 +51,6 @@ python ./preprocessing.py
 ```python
 python ./augment-and-classify.py
 ```
-* **preprocessing.ipynb**
-* **augment-and-classify.ipynb**
 
 
 
