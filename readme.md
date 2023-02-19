@@ -4,11 +4,11 @@ This repo is the accompanied by the paper --------. This worked tried to convert
 ![Block diagram](/figures/block-diagram.png)
 
 
-# Installing requirement
-## Matlab 
-
-## python
-install the requirements using
+# Requirement
+### Matlab 
+ Access to Matlab program and command line 
+### python
+Install the requirements using
 
 ```
 pip install -r requirements.txt
@@ -21,32 +21,37 @@ pip install -r requirements.txt
 Most of the core matlab code was written as a part of the origianl 2017 physionet contest by the blackswan group that won the competition.
 Some of the matlab scripting and all of the python code was written by the authors of the paper.
 
-
-
-
-## R-R Extraction
+### R-R Extraction
 We have used the R-peak detection code from blackswan  to speed up the development of our algorithm. 
 In the first part of our work we extract the R-peaks and stor them in a matlab cell. This is done by the **HistogramRrInterval.m** 
 
 
-## Preprocessing and image-Construction
+### Preprocessing and image-Construction
 In this part we load the R-R intervals in python and  create the preprocessed Poincare images.
 The output of samples preprocessing images are shown bellow.**preprocessing.ipynb**
 
 ![Normal image](/figures/af.png)
 ![AF image](/figures/normal.png)
-## Image augmentation and classification.
+### Image augmentation and classification.
 In this part we used a CNN to classify the data to AF and not-af.
 Both of these steps are combined in the **augment-and-classify.ipynb**
 
 # Code execution
-## matlab code
-run the **HistogramRrInterval.m** script upload the two output files to google cloud for google colab use
-upload the following files to google drive
+### matlab code
+After cloning the project execute the followin line in your matlab environment.
+```matlab
+Matlab_scripts/RrExtraction
+```
+which which will output the following **.mat** files. These two files will be passed on to the python code in the next section
 * NormalRPeaks
 * AfRPeaks
-## python code
-run the following scripts in order in a google colab environment
+### python code
+```python
+python ./preprocessing.py
+```
+```python
+python ./augment-and-classify.py
+```
 * **preprocessing.ipynb**
 * **augment-and-classify.ipynb**
 
