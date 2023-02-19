@@ -23,7 +23,7 @@ upload the following files to google drive
 * NormalRPeaks
 * AfRPeaks
 ## python code
-run the following scripts in order in a google colab enviroment
+run the following scripts in order in a google colab environment
 * **preprocessing.ipynb**
 * **augment-and-classify.ipynb**
 
