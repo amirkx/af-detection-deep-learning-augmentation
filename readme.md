@@ -1,7 +1,7 @@
 # Short summary & Block diagram
 This repo is the accompanied by the paper --------. This worked tried to convert a 1-D image to a 2-D image and then use a form of GANs to augment data. The block diagram below depicts the big picture of what we have done . For more details visit the paper.
 
-![Block diagram](/figures/block-diagram.pdf)
+![Block diagram](/figures/block-diagram.png)
 
 
 # Installing requirement
