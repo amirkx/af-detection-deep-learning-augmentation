@@ -53,7 +53,7 @@ import gc
 
 
 af_images = np.load(
-'/content/drive/MyDrive/Projects/Big-Files/AF.npy') # 360 x 360 AF samples
+"/checkpoint_data/after_preprocessing/afImages.npy") # 360 x 360 AF samples
 print('af_images.shape: ', af_images.shape)
 
 
@@ -107,7 +107,7 @@ if AUGMENTED_TO_ORIGINAL_RATIO > 0:
 
 
 normal_images = np.load(
-'/content/drive/MyDrive/Projects/Big-Files/normal.npy') # 360 x 360 normal samples
+"/checkpoint_data/after_preprocessing/normalImages.npy") # 360 x 360 normal samples
 print('normal_images.shape: ', normal_images.shape)
 
 
