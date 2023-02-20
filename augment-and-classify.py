@@ -29,12 +29,12 @@ AUGMENTED_TO_ORIGINAL_RATIO = 1.2
 # In[2]:
 
 
-if IS_COLAB:
-    from google.colab import drive
-    drive.mount('/content/drive')
-    get_ipython().run_line_magic('cd', 'drive/MyDrive/Projects/af-detection')
-    # !ls
-
+#if IS_COLAB:
+#    from google.colab import drive
+#    drive.mount('/content/drive')
+#    get_ipython().run_line_magic('cd', 'drive/MyDrive/Projects/af-detection')
+#    # !ls
+#
 
 # ## Load libraries
 
@@ -53,7 +53,7 @@ import gc
 
 
 af_images = np.load(
-"/checkpoint_data/after_preprocessing/afImages.npy") # 360 x 360 AF samples
+"./checkpoint_data/after_preprocessing/afImages.npy") # 360 x 360 AF samples
 print('af_images.shape: ', af_images.shape)
 
 
@@ -107,7 +107,7 @@ if AUGMENTED_TO_ORIGINAL_RATIO > 0:
 
 
 normal_images = np.load(
-"/checkpoint_data/after_preprocessing/normalImages.npy") # 360 x 360 normal samples
+"./checkpoint_data/after_preprocessing/normalImages.npy") # 360 x 360 normal samples
 print('normal_images.shape: ', normal_images.shape)
 
 
