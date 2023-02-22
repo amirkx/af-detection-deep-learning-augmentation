@@ -1,5 +1,5 @@
 # Short summary & Block diagram
-This repo is the accompanied by the paper --------. In this project, we tried to convert a 1-D image to a 2-D image and then use a form of GANs to augment the data. The block diagram below depicts the big picture of what we have done. For more details, check out our paper.
+This repo is the accompanied by the paper --------. In this project, we tried to convert a 1-D image to a 2-D image and then use a form of GAN to augment the data. The block diagram below depicts the big picture of what we have done. For more details, check out our paper.
 
 ![Block diagram](/figures/block-diagram.png)
 
@@ -27,7 +27,7 @@ In the first part of our work, we extract the R-peaks and store them in a matlab
 
 ### Preprocessing and image-Construction
 In this part, we load the R-R intervals in python and create the preprocessed Poincare images.
-The output of sample preprocessed images are shown below.**preprocessing.ipynb**
+A couple of preprocessed images are shown below.**preprocessing.ipynb**
 
 ![Normal image](/figures/af.png)
 ![AF image](/figures/normal.png)
