@@ -33,7 +33,8 @@ A couple of preprocessed images are shown below.**preprocessing.ipynb**
 ![AF image](/figures/normal.png)
 ### Image augmentation and classification.
 In this part, we used a CNN to classify the data to AF and not-af.
-Both of these steps are combined in the **/jupyter-notebook/augment-and-classify.ipynb**
+Both of these steps are combined in **/jupyter-notebook/augment-and-classify.ipynb**
+
 **Note**: The outputs of our last execution are also visible in **/jupyter-notebook/augment-and-classify.ipynb**
 
 # Code execution
