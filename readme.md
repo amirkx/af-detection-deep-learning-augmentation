@@ -27,10 +27,16 @@ In the first part of our work, we extract the R-peaks and store them in a matlab
 
 ### Preprocessing and image-Construction
 In this part, we load the R-R intervals in python and create the preprocessed Poincare images.
-A couple of preprocessed images are shown below.**preprocessing.ipynb**
+A couple of preprocessed images are shown below. The first one is an example of an AF image and the second one is an example of a normal image.
 
-![Normal image](/figures/af.png)
-![AF image](/figures/normal.png)
+<p align="center">
+<img src="/figures/af.png" width="400" height="400" />
+</p>
+
+
+<p align="center">
+<img src="/figures/normal.png" width="400" height="400" />
+</p>
 ### Image augmentation and classification.
 In this part, we used a CNN to classify the data to AF and not-af.
 Both of these steps are combined in **/jupyter-notebook/augment-and-classify.ipynb**
